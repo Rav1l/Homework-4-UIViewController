@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Homework_4_UIViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="iEP-I4-drf">
+                                <rect key="frame" x="95" y="44" width="200" height="200"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDc-Ox-1Vy">
+                                <rect key="frame" x="16" y="252.00000000000003" width="358" height="25.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7K5-Z1-nsU">
+                                <rect key="frame" x="16" y="760" width="358" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="r3n-Ds-x6a"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="didTapChangeButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="ffG-iw-fOo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AAp-Ef-Fg2">
+                                <rect key="frame" x="16" y="307.33333333333331" width="358" height="25.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fY0-Rr-BPM">
+                                <rect key="frame" x="16" y="362.66666666666669" width="358" height="25.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lDc-Ox-1Vy" firstAttribute="top" secondItem="iEP-I4-drf" secondAttribute="bottom" constant="8" symbolic="YES" id="10r-IA-ayD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lDc-Ox-1Vy" secondAttribute="trailing" constant="16" id="3w9-2k-RO4"/>
+                            <constraint firstItem="iEP-I4-drf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="5e2-z8-jga"/>
+                            <constraint firstItem="AAp-Ef-Fg2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="GFW-yN-Ieu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iEP-I4-drf" secondAttribute="bottom" constant="566" id="H07-jh-hEl"/>
+                            <constraint firstItem="fY0-Rr-BPM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="KT7-Xa-jeJ"/>
+                            <constraint firstItem="7K5-Z1-nsU" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="MHt-TY-gqu"/>
+                            <constraint firstItem="lDc-Ox-1Vy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="aT6-4j-f3g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AAp-Ef-Fg2" secondAttribute="trailing" constant="16" id="eLR-WD-5eQ"/>
+                            <constraint firstItem="iEP-I4-drf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fCF-3U-YWB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7K5-Z1-nsU" secondAttribute="trailing" constant="16" id="idi-fU-kyf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iEP-I4-drf" secondAttribute="trailing" constant="95" id="rtm-aH-qZ2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fY0-Rr-BPM" secondAttribute="trailing" constant="16" id="tbt-ej-tFA"/>
+                            <constraint firstItem="7K5-Z1-nsU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ukY-rA-rf1"/>
+                            <constraint firstItem="fY0-Rr-BPM" firstAttribute="top" secondItem="AAp-Ef-Fg2" secondAttribute="bottom" constant="30" id="vy2-kC-a4N"/>
+                            <constraint firstItem="AAp-Ef-Fg2" firstAttribute="top" secondItem="lDc-Ox-1Vy" secondAttribute="bottom" constant="30" id="yO0-ng-3LN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addressLabel" destination="fY0-Rr-BPM" id="BNG-H1-HL0"/>
+                        <outlet property="avatarImage" destination="iEP-I4-drf" id="gNz-hZ-eac"/>
+                        <outlet property="changeButton" destination="7K5-Z1-nsU" id="hWc-l5-ooa"/>
+                        <outlet property="jobTitelLabel" destination="AAp-Ef-Fg2" id="Kfs-eO-g2j"/>
+                        <outlet property="nameLabel" destination="lDc-Ox-1Vy" id="nhi-e9-dQQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44.615384615384613" y="83.886255924170612"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="avatar.jpg" width="800" height="800"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

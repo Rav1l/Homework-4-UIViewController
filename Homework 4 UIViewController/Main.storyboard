@@ -19,23 +19,20 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Lh5-sq-Ihk">
                                 <rect key="frame" x="107" y="54" width="200" height="200"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Nw-lS-TlN">
-                                <rect key="frame" x="20" y="262" width="374" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Nw-lS-TlN">
+                                <rect key="frame" x="20" y="262" width="374" height="25.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Job" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19y-Px-hRq">
-                                <rect key="frame" x="20" y="321" width="374" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19y-Px-hRq">
+                                <rect key="frame" x="20" y="317.5" width="374" height="21.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7g-Fi-6dE">
-                                <rect key="frame" x="20" y="383" width="374" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7g-Fi-6dE">
+                                <rect key="frame" x="20" y="369" width="374" height="21.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -51,23 +48,55 @@
                                     <action selector="didTapChangeButton" destination="Y6W-OH-hqX" eventType="touchUpInside" id="StJ-9s-XIP"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BWe-j4-ACA">
+                                <rect key="frame" x="137" y="420.5" width="140" height="32.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="Xgo-rb-o6M"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Copy address">
+                                            <attributes>
+                                                <font key="NSFont" size="16" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="didTapCopyAddressButton" destination="Y6W-OH-hqX" eventType="touchUpInside" id="NUL-em-DIQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="19y-Px-hRq" firstAttribute="top" secondItem="4Nw-lS-TlN" secondAttribute="bottom" constant="30" id="2NM-1v-dU9"/>
+                            <constraint firstItem="S7g-Fi-6dE" firstAttribute="top" secondItem="19y-Px-hRq" secondAttribute="bottom" constant="30" id="55o-0w-0rI"/>
                             <constraint firstItem="KNK-CS-LRQ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="9XC-Gv-LNL"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Lh5-sq-Ihk" secondAttribute="bottom" constant="608" id="Geq-Ln-7Up"/>
+                            <constraint firstItem="4Nw-lS-TlN" firstAttribute="top" secondItem="Lh5-sq-Ihk" secondAttribute="bottom" constant="8" symbolic="YES" id="IxK-he-qmS"/>
                             <constraint firstItem="Lh5-sq-Ihk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="107" id="Po6-qX-NQN"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Lh5-sq-Ihk" secondAttribute="trailing" constant="107" id="QTP-h8-7ml"/>
+                            <constraint firstItem="BWe-j4-ACA" firstAttribute="top" secondItem="S7g-Fi-6dE" secondAttribute="bottom" constant="30" id="Vx2-8i-QWi"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="KNK-CS-LRQ" secondAttribute="trailing" constant="20" id="WU3-Ao-8ao"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="4Nw-lS-TlN" secondAttribute="trailing" constant="20" id="Wgq-As-Mzc"/>
+                            <constraint firstItem="S7g-Fi-6dE" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Yvu-64-v9f"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="19y-Px-hRq" secondAttribute="trailing" constant="20" id="b4o-Ff-lSi"/>
+                            <constraint firstItem="BWe-j4-ACA" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="bkd-bh-YSW"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="KNK-CS-LRQ" secondAttribute="bottom" constant="10" id="f33-5C-teD"/>
+                            <constraint firstItem="4Nw-lS-TlN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="kvx-ew-nyp"/>
+                            <constraint firstItem="19y-Px-hRq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="mP4-Yt-Oi2"/>
                             <constraint firstItem="Lh5-sq-Ihk" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="ykj-Yy-4Ot"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="S7g-Fi-6dE" secondAttribute="trailing" constant="20" id="zEv-qI-Pbi"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="addressLabel" destination="S7g-Fi-6dE" id="B6T-rg-h9d"/>
                         <outlet property="avatarImage" destination="Lh5-sq-Ihk" id="Hfn-Uu-3bw"/>
                         <outlet property="changeButton" destination="KNK-CS-LRQ" id="v4S-me-lFH"/>
+                        <outlet property="copyAddressButton" destination="BWe-j4-ACA" id="3Aj-Qq-afm"/>
                         <outlet property="jobTitelLabel" destination="19y-Px-hRq" id="tEp-by-bke"/>
                         <outlet property="nameLabel" destination="4Nw-lS-TlN" id="eQa-dF-WW5"/>
                     </connections>
